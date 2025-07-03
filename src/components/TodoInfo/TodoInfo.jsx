@@ -3,7 +3,7 @@ import { UserInfo } from '../UserInfo/UserInfo';
 export const TodoInfo = ({ todo, user }) => {
   return (
     <div className={`TodoInfo${todo.completed ? ' TodoInfo--completed' : ''}`}>
-      <h2 className="TodoInfo__title">{todo.title}</h2>
+      <p className="TodoInfo__title">{todo.title}</p>
       <UserInfo user={user} />
     </div>
   );

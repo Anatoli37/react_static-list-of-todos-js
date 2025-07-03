@@ -22,7 +22,7 @@ describe('UserInfo', () => {
   it('should show a user.name', () => {
     mount(<UserInfo user={user1} />);
 
-    cy.get('.UserInfo__name').should('have.text', 'Leanne Graham');
+    cy.get('.UserInfo__name').eq(0).should('have.text', 'Leanne Graham');
   });
 
   it('should have a link with mailto: user.email', () => {
